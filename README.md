@@ -45,3 +45,6 @@ Todo o mapeamento técnico, detalhamento dos casos de teste (escritos em Gherkin
 📊 [Clique aqui para acessar a Planilha de Casos de Teste e Bugs](https://docs.google.com/spreadsheets/d/1Xw58kZt-w4lFlyd0YOFKwso17S0dcakAYrVp8feBeWE/edit?usp=sharing)
 
 📁 [Clique aqui para acessar a Pasta de Evidências (Prints)](https://drive.google.com/drive/folders/1IaYLOrb0pYOmZqadfUSlWUYDRyvzwe-t?usp=sharing)
+
+## 6. Nota Crítica de Arquitetura (Pós-Testes)
+Durante a execução dos testes práticos, constatei que a aplicação, proposta inicialmente como um sistema CRUD de cursos, entrega de forma funcional apenas o "C" (Create). O fluxo de "Read" (detalhamento no card) é inacessível, o "Update" (edição) é inexistente na interface, e o "Delete" (exclusão) apresenta um falso positivo (retorna mensagem de sucesso na interface, mas não exclui o dado do banco/listagem). Isso eleva a criticidade do sistema, exigindo uma revisão da integração Front-end vs Back-end antes de qualquer deploy em produção.
